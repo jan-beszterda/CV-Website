@@ -25,32 +25,34 @@
         <a class="nav-menu-wide" href="index.html">Home</a>
         <a class="nav-menu-wide" href="my_projects.html">My projects</a>
         <a class="nav-menu-wide" href="about_me.html">About me</a>
-        <span id="contactButton"><a href="#">Contact me</a></span>
+        <a href="#" class="white-button">Contact me</a>
     </nav>
     <main id="main">
-        <section class="section">
-            <article>
+        <article class="row-article">
+            <section class="column-section">
                 <h2>Contact me</h2>
                 <p>Does my knowledge and experience sound valuable to you? Are my projects interesting?<br>
                     Do you have any questions or would you like to code together?</p>
                 <p>I am always happy to respond to an email so do not hesitate to send me a message by using this form.</p>
-            </article>
-            <form>
-                <label for="first-name">First name:</label>
-                <input type="text" id="first-name" name="first-name" size="50" required>
-                <label for="last-name">Last name:</label>
-                <input type="text" id="last-name" name="last-name" size="50" required>
-                <label for="email">Email address:</label>
-                <input type="email" id="email" name="email" size="50" required>
-                <label for="phone">Phone number:</label>
-                <input type="tel" id="phone" name="phone" size="50">
-                <label for="subject">Subject:</label>
-                <input type="text" id="subject" name="subject" size="50" required>
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="10" cols="50" required></textarea>
-                <input type="submit" id="submit" value="Send me a message">
-            </form> 
-        </section>
+            </section>
+            <section class="column-section">
+                <form>
+                    <label for="first-name">First name:</label>
+                    <input type="text" id="first-name" name="first-name" size="50" required>
+                    <label for="last-name">Last name:</label>
+                    <input type="text" id="last-name" name="last-name" size="50" required>
+                    <label for="email">Email address:</label>
+                    <input type="email" id="email" name="email" size="50" required>
+                    <label for="phone">Phone number:</label>
+                    <input type="tel" id="phone" name="phone" size="50">
+                    <label for="subject">Subject:</label>
+                    <input type="text" id="subject" name="subject" size="50" required>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="10" cols="50" required></textarea>
+                    <input type="submit" id="submit" class="white-button" value="Send me a message">
+                </form> 
+            </section>
+        </article>
     </main>
     <footer id="footer">
         <div>
