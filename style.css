@@ -4,6 +4,7 @@ html {
 
 html, body {
     font-family: Arial, Helvetica, sans-serif;
+    color: white;
 }
   
 *, *:before, *:after {
@@ -92,28 +93,39 @@ body {
     background: cornflowerblue;
     padding: 20px 50px;
     margin-bottom: 50px;
+    border-radius: 5px;
 }
 
 .section img {
     border-radius: 100px;
     margin: 0px 50px;
-    max-height: 400px;
+    width: 400px;
+    height: auto;
 }
 
-section div {
+.section div {
     display: flex;
     flex-direction: column;
     margin: 0px 50px;
+    align-items: flex-start;
+    max-width: 800px;
+    flex-grow: 2;
 }
 
-.section h2 {
-    margin-bottom: 10px;
+h2 {
+    margin-bottom: 20px;
     font-size: 2rem;
 }
 
-.section p {
+h3 {
+    margin-bottom: 20px;
     font-size: 1.5rem;
-    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    text-align: justify;
 }
 
 .section a {
@@ -133,12 +145,162 @@ section div {
     border: 2px solid black;
 }
 
+#about-me {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background: cornflowerblue;
+    padding: 50px;
+    margin-bottom: 50px;
+}
+
+#about-me section {
+    display: flex;
+    flex-direction: column;
+    background: cornflowerblue;
+    padding: 20px 20px;
+    margin: 0px;
+    width: 50%;
+}
+
+#about-me .section .row img {
+    max-width: 30px;
+    border-radius: 0px;
+    margin-right: 10px;
+}
+
+#about-me .section .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 10px 0px;
+    flex-grow: 0;
+}
+
+#about-me .section .row a {
+    color: white;
+    text-decoration: underline;
+    border: none;
+    background: transparent;
+    margin: 0px;
+    padding: 0px;
+    border-radius: 0px;
+    font-size: 1rem;
+    display: inline-block;
+    position: relative;
+}
+
+.section .row span {
+    flex-grow: 2;
+}
+
+#about-me section h2:first-of-type {
+    margin-top: 0px;
+}
+
+#about-me section h2 {
+    margin-top: 10px;
+}
+
+#about-me section h2, h3, p {
+    color: white
+    
+}
+
+#about-me section p {
+    text-align: justify;
+}
+
+#about-me img {
+    border-radius: 0px;
+    width: 100%;
+    margin: 0px;
+}
+
+.section form {
+    flex-grow: 2;
+}
+
+.section form label {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.section form input, textarea {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.section form #submit {
+    text-decoration: none;
+    color: black;
+    background: white;
+    padding: 20px;
+    border: 2px solid cornflowerblue;
+    font-size: 1.2rem;
+    border-radius: 10px;
+}
+
+.section form #submit:hover {
+    text-decoration: none;
+    color: white;
+    background: rgb(71, 129, 236);
+    border: 2px solid black;
+}
+
+.section article {
+    margin-right: 50px;
+}
+
 #footer {
     background: cornflowerblue;
     display: flex;
+    flex-direction: column;
     align-items: center;
     height: auto;
     padding: 20px 50px;
+}
+
+#footer div {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+
+#footer div a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    margin: 0px 10px;
+}
+
+#footer p {
+    margin: 0px;
+    font-size: 1rem;
+}
+
+@media (max-width: 800px) {
+    #about-me {
+        flex-direction: column;
+    }
+
+    #about-me section {
+        width: 100%;
+    }
+
+    #about-me section img {
+        display:none;
+    }
+    
+}
+
+@media (max-width: 900px) {
+    #main {
+        margin: 50px 20px 0px 20px;
+    }
 }
 
 @media (max-width: 600px) {

@@ -5,11 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <title>Contact me</title>
 </head>
 <body>
     <nav id="navbar">
-        <img src="/index.jpg" alt="Logo">
+        <img src="graphics/photo.jpg" alt="Logo">
         <div id="menu">Menu
             <a class="nav-menu-narrow" href="index.html">Home</a>
             <a class="nav-menu-narrow" href="my_projects.html">My projects</a>
@@ -22,14 +29,42 @@
     </nav>
     <main id="main">
         <section class="section">
-            <img src="index.jpg" alt="About me">
-            <div>
-                <h2>My journey</h2>
-                <p>Lorem ipsum</p>
-                <a href="">See my journey</a>
-            </div>
+            <article>
+                <h2>Contact me</h2>
+                <p>Does my knowledge and experience sound valuable to you? Are my projects interesting?<br>
+                    Do you have any questions or would you like to code together?</p>
+                <p>I am always happy to respond to an email so do not hesitate to send me a message by using this form.</p>
+            </article>
+            <form>
+                <label for="first-name">First name:</label>
+                <input type="text" id="first-name" name="first-name" size="50" required>
+                <label for="last-name">Last name:</label>
+                <input type="text" id="last-name" name="last-name" size="50" required>
+                <label for="email">Email address:</label>
+                <input type="email" id="email" name="email" size="50" required>
+                <label for="phone">Phone number:</label>
+                <input type="tel" id="phone" name="phone" size="50">
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" size="50" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="10" cols="50" required></textarea>
+                <input type="submit" id="submit" value="Send me a message">
+            </form> 
         </section>
     </main>
-    <footer id="footer"></footer>
+    <footer id="footer">
+        <div>
+            <a href="#">Home</a>
+            <span>&middot;</span>
+            <a href="my_projects.html">My projects</a>
+            <span>&middot;</span>
+            <a href="about_me.html">About me</a>
+            <span>&middot;</span>
+            <a href="contact_me.html">Contact me</a>
+        </div>
+        <p>&#169;Jan&nbsp;Besterda</p>
+        <p>All rights reserved</p>
+        <p>2022</p>
+    </footer>
 </body>
 </html>

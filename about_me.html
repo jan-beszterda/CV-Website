@@ -5,11 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <title>About me</title>
 </head>
 <body>
     <nav id="navbar">
-        <img src="/index.jpg" alt="Logo">
+        <img src="graphics/photo.jpg" alt="Logo">
         <div id="menu">Menu
             <a class="nav-menu-narrow" href="index.html">Home</a>
             <a class="nav-menu-narrow" href="my_projects.html">My projects</a>
@@ -21,23 +28,87 @@
         <span id="contactButton"><a href="contact_me.html">Contact me</a></span>
     </nav>
     <main id="main">
-        <section class="section">
-            <img src="index.jpg" alt="About me">
-            <div>
-                <h2>My journey</h2>
-                <p>Lorem ipsum</p>
-                <a href="">See my journey</a>
-            </div>
-        </section>
-        <section class="section">
-            <div>
-                <h2>My work</h2>
-                <p>Lorem ipsum</p>
-                <a href="">See my projects</a>
-            </div>
-            <img src="negative-space-programming-java-code-acwg-thumb-1.jpg" alt="My projects">
-        </section>
+        <article id="about-me">
+            <section id="journey-image">
+                <img id="journey" src="graphics/journey1.png" alt="About me">
+                <img id="journey" src="graphics/journey2.png" alt="About me">
+                <img id="journey" src="graphics/journey3.png" alt="About me">
+                <img id="journey" src="graphics/journey4.png" alt="About me">
+                <img id="journey" src="graphics/journey5.png" alt="About me">
+                <img id="journey" src="graphics/journey6.png" alt="About me">
+            </section>
+            <section class="section">
+                <h2>My details</h2>
+                <h3>Full name: Jan Beszterda</h3>
+                <div class="row">
+                    <img src="graphics/home_icon.png" alt="Address" class="icon">
+                    <span>Klosteräng 17, 463 71 Lödöse</span>
+                </div>
+                <div class="row">
+                    <img src="graphics/phone_icon.png" alt="Phone" class="icon">
+                    <span>+46 736 234 294</span>
+                </div>
+                <div class="row">
+                    <img src="graphics/email_icon.png" alt="Email" class="icon">
+                    <span>jan.beszterda@gmail.com</span>
+                </div>
+                <div class="row">
+                    <img src="graphics/linkedin_icon.png" alt="LinkedIn" class="icon">
+                    <a href="https://www.linkedin.com/in/jan-beszterda" target="_blank">My LinkedIn profile</a>
+                </div>
+                <div class="row">
+                    <img src="graphics/github_icon.png" alt="GitHub" class="icon">
+                    <a href="https://github.com/jan-beszterda" target="_blank">My GitHub page</a>
+                </div>
+                <h2>About me</h2>
+                <p>Jag är en noggrann och lösningsfokuserad person med god datorvana and interest for programming languages. 
+                    Currently I am studying Java Developer programme at Teknikhögskolan in Gothenburg och är intresserad av framtida praktik- och jobbmöjligheter inom mjukvaruutveckling. 
+                    Jag har också tidigare erfarenhet av kundtjänst och digital marknadsföring.</p>
+                <h2>My education</h2>
+                <h3>2021 – 2023 (current)</h3>
+                <p>Java Developer (Teknikhögskolan, Gothenburg)</p>
+                <h3>2021</h3>
+                <p>Swedish as a second language 1, 2, 3 (Hermods)</p>
+                <h3>2008 – 2011</h3>
+                <p>BA in classical philiology (Adam Mickiewicz University, Poznan, Poland)</p>
+                <h3>2003 – 2006</h3>
+                <p>High School with extended programme in mathematics and computer sciences (32nd high school, Poznan, Poland)</p>
+                <h2>My experience</h2>
+                <h3>August 2017 – April 2021</br>CRM consultant at Lottoland Ltd. (remote work)</h3>
+                <p>Jag var ansvarig för kvalitetskontroll av reklamkampanjer för alla marknader och inom alla kanaler. Jag uppdaterade avdelningens dokumentation och tränade andra anställda.
+                    Dessutom övervakade jag marknadsföringssystem och samarbetade med andra avdelningar och företag för att skapa förbättringar. Jag byggde små mjukvarulösningar i Python och PHP.</p>
+                <h3>December 2015 – December 2016</br>Promotions Executive & Conversion Executive at Lottoland Ltd. (Gibraltar)</h3>
+                <p>Jag planerade reklamkampanjer för alla marknader och flera olika kanaler. Jag organiserade arbete för andra anställda I marknadsföringsavdelning. Jag var ansvarig för kommunikation mellan marknadschefer och marknadsföringsavdelning. 
+                    Jag skapade avdelningens dokumentation och tränade andra marknadsförare. Jag byggde reklamkampanjer för nyregistrerade kunder.</p>
+                <h3>May 2014 – December 2015</br>Customer Service Executive & Senior Customer Service Executive at Lottoland Ltd. (Gibraltar)</h3>
+                <p>Jag svarade på kunders frågor både via e-post och chatt. Jag skapade avdelningens dokumentation och tränade andra anställda. Jag övervakade andra kundtjänstmedarbetare och planerade deras skift.</p>
+                <h2>My skills</h2>
+                <p>&middot;&nbsp;CRM systems: Optimove, Acoustic, Other Levels, Mobivate, Intercom, SendWithUs, SendGrid</p>
+                <p>&middot;&nbsp;JIRA & Atlassian Confluence</p>
+                <p>&middot;&nbsp;Customer support systems: UserVoice, LiveChat</p>
+                <p>&middot;&nbsp;Programming and markup languages: HTML, CSS, JavaScript, PHP, Python, Java, SQL</p>
+                <p>&middot;&nbsp;Microsoft Office, Windows OS & Mac OS</p>
+                <p>&middot;&nbsp;Driver's licence B</p>
+                <h2>My language proficiency</h2>
+                <p>&middot;&nbsp;Polish is my native language</p>
+                <p>&middot;&nbsp;I am fluent in English</p>
+                <p>&middot;&nbsp;I have professional working proficiency in Swedish</p>
+            </section>
+        </article>
     </main>
-    <footer id="footer"></footer>
+    <footer id="footer">
+        <div>
+            <a href="#">Home</a>
+            <span>&middot;</span>
+            <a href="my_projects.html">My projects</a>
+            <span>&middot;</span>
+            <a href="about_me.html">About me</a>
+            <span>&middot;</span>
+            <a href="contact_me.html">Contact me</a>
+        </div>
+        <p>&#169;Jan&nbsp;Besterda</p>
+        <p>All rights reserved</p>
+        <p>2022</p>
+    </footer>
 </body>
 </html>
