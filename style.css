@@ -86,11 +86,18 @@ p {
 .row-article, .row-article-reverse {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     background: cornflowerblue;
     padding: 20px 50px;
     margin-bottom: 50px;
     border-radius: 5px;
+}
+
+.row-article {
+    justify-content: left;
+}
+
+.row-article-reverse {
+    justify-content: space-between;
 }
 
 .column-article {
@@ -112,18 +119,14 @@ p {
 
 .row-article img {
     margin: 0px 10px;
-    max-width: 400px;
-    max-height: 400px;
-    width: auto;
+    width: 400px;
     height: auto;
     border-radius: 10px;
 }
 
 .row-article-reverse img {
     margin: 0px 10px;
-    max-width: 400px;
-    max-height: 400px;
-    width: auto;
+    width: 400px;
     height: auto;
     border-radius: 10px;
 }
@@ -137,12 +140,38 @@ p {
 .link {
     color: white;
     text-decoration: underline;
+    align-items: center;
 }
 
-.row-section .icon {
+.image-column-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0px 10px;
+}
+
+.image-column-section img {
+    width: 100%;
+    height: auto;
+}
+
+.column-section div, a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.column-section div img {
     max-width: 30px;
     height: auto;
-    margin: 10px;
+    margin: 10px 10px 10px 0px;
+    border-radius: 0px;
+}
+
+.column-section a img {
+    max-width: 30px;
+    height: auto;
+    margin: 10px 10px 10px 0px;
     border-radius: 0px;
 }
 
@@ -171,22 +200,23 @@ p {
     margin: 0px 5px 0px 0px;
 }
 
+form {
+    margin: 0px 10px;
+}
 
-
-form label {
-    font-size: 1.2rem;
+label {
     margin-bottom: 10px;
-    display: block;
 }
 
-form input, textarea {
-    font-size: 1.2rem;
+input, textarea {
     margin-bottom: 20px;
-    display: block;
 }
 
-form textarea {
+label, input, textarea {
+    font-size: 1.2rem;
+    display: block;
     width: 100%;
+    resize: vertical;
 }
 
 #footer {
@@ -217,18 +247,23 @@ form textarea {
 }
 
 @media (max-width: 1000px) {
+    .row-article, .row-article-reverse {
+        padding: 20px;
+    }
+    
     .row-article img {
-        max-width: 200px;
-        max-height: 200px;
         height: auto;
-        width: auto;
+        width: 200px;
     }
 
     .row-article-reverse img {
-        max-width: 200px;
-        max-height: 200px;
         height: auto;
-        width: auto;
+        width: 200px;
+    }
+
+    .image-column-section img {
+        width: 100%;
+        height: auto;
     }
 
     #main {
@@ -244,6 +279,10 @@ form textarea {
     }
     
     p {
+        font-size: 1rem;
+    }
+
+    label, input, textarea {
         font-size: 1rem;
     }
 
@@ -338,15 +377,19 @@ form textarea {
     }
 
     .row-article img {
-        max-width: 100px;
+        width: 100px;
         height: auto;
         margin: 20px 20px;
     }
 
     .row-article-reverse img {
-        max-width: 100px;
+        width: 100px;
         height: auto;
         margin: 20px 20px;
+    }
+
+    .image-column-section {
+        display: none;
     }
 
     h2 {
@@ -358,6 +401,10 @@ form textarea {
     }
     
     p {
+        font-size: 0.9rem;
+    }
+
+    label, input, textarea {
         font-size: 0.9rem;
     }
 
