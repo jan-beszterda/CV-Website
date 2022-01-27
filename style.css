@@ -119,15 +119,17 @@ p {
 
 .row-article img {
     margin: 0px 10px;
-    width: 400px;
+    width: 300px;
     height: auto;
+    max-height: 300px;
     border-radius: 10px;
 }
 
 .row-article-reverse img {
     margin: 0px 10px;
-    width: 400px;
+    width: 300px;
     height: auto;
+    max-height: 300px;
     border-radius: 10px;
 }
 
@@ -254,11 +256,13 @@ label, input, textarea {
     .row-article img {
         height: auto;
         width: 200px;
+        max-height: 200px;
     }
 
     .row-article-reverse img {
         height: auto;
         width: 200px;
+        max-height: 200px;
     }
 
     .image-column-section img {
@@ -379,12 +383,14 @@ label, input, textarea {
     .row-article img {
         width: 100px;
         height: auto;
+        max-height: 100px;
         margin: 20px 20px;
     }
 
     .row-article-reverse img {
         width: 100px;
         height: auto;
+        max-height: 100px;
         margin: 20px 20px;
     }
 
